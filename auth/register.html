@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Daftar — DonasiKita</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<nav>
+  <a href="../index.html" class="nav-logo">DONASIKITA</a>
+  <ul class="nav-links">
+    <li><a href="../index.html">BERANDA</a></li>
+    <li><a href="../views/katalog.html">DONASI</a></li>
+    <ul id="nav-right" style="display:contents"></ul>
+  </ul>
+</nav>
+
+<div class="container">
+  <h1>DAFTAR AKUN</h1>
+  <div class="alert alert-err" id="alert-err"></div>
+
+  <form id="form-register" class="form-wrap">
+    <label>Nama Lengkap *</label>
+    <input type="text" name="nama" required placeholder="Nama kamu">
+    <label>Email *</label>
+    <input type="email" name="email" required placeholder="email@example.com">
+    <label>Password * (min. 6 karakter)</label>
+    <input type="password" name="password" required placeholder="••••••••">
+    <label>Konfirmasi Password *</label>
+    <input type="password" name="confirm" required placeholder="Ulangi password">
+    <button type="submit">Daftar Sekarang</button>
+  </form>
+
+  <p style="font-size:.85rem;margin-top:16px;color:#555">
+    Sudah punya akun? <a href="login.html" style="color:#cc0000">Login di sini</a>
+  </p>
+</div>
+
+<footer>&copy; 2026 DonasiKita — UKL SIJA 2026</footer>
+<script src="../assets/js/script.js"></script>
+<script>initRegister();</script>
+</body>
+</html>

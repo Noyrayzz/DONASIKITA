@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DonasiKita</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">DONASIKITA</a>
+  <ul class="nav-links">
+    <li><a href="index.html">BERANDA</a></li>
+    <li><a href="views/katalog.html">DONASI</a></li>
+    <ul id="nav-right" style="display:contents"></ul>
+  </ul>
+</nav>
+
+<div class="container">
+  <h1>SELAMAT DATANG DI DONASIKITA</h1>
+  <p>Platform donasi online untuk membantu sesama. Setiap rupiah Anda berarti bagi mereka yang membutuhkan.</p>
+
+  <hr>
+
+  <!-- Statistik -->
+  <div class="stats-row">
+    <div class="stat-box"><div class="num" id="stat-kamp">—</div><div class="lbl">Program Aktif</div></div>
+    <div class="stat-box"><div class="num" id="stat-donatur">—</div><div class="lbl">Total Donatur</div></div>
+    <div class="stat-box"><div class="num" id="stat-total">—</div><div class="lbl">Dana Tersalurkan</div></div>
+  </div>
+
+  <hr>
+
+  <h2>PROGRAM DONASI TERBARU</h2>
+  <div id="kampanye-list"></div>
+
+  <br>
+  <a href="views/katalog.html" class="btn">Lihat Semua Program</a>
+</div>
+
+<footer>&copy; 2026 DonasiKita — UKL SIJA 2026 SMK Telkom Sidoarjo</footer>
+
+<script src="assets/js/script.js"></script>
+<script>initIndex();</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Katalog Donasi — DonasiKita</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<nav>
+  <a href="../index.html" class="nav-logo">DONASIKITA</a>
+  <ul class="nav-links">
+    <li><a href="../index.html">BERANDA</a></li>
+    <li><a href="katalog.html">DONASI</a></li>
+    <ul id="nav-right" style="display:contents"></ul>
+  </ul>
+</nav>
+
+<div class="container">
+  <div class="breadcrumb"><a href="../index.html">Beranda</a> / Katalog Donasi</div>
+  <h1>KATALOG PROGRAM DONASI</h1>
+
+  <div class="filter-row">
+    <input type="text" id="q" placeholder="Cari program...">
+    <select id="kat">
+      <option value="">Semua Kategori</option>
+      <option>Pendidikan</option>
+      <option>Kesehatan</option>
+      <option>Bencana Alam</option>
+      <option>Yatim Piatu</option>
+      <option>Masjid &amp; TPQ</option>
+    </select>
+    <button id="btn-filter">Cari</button>
+    <button id="btn-reset" class="btn-outline">Reset</button>
+  </div>
+
+  <p style="font-size:.83rem;color:#888;margin-bottom:12px">
+    Menampilkan <strong id="result-count">0</strong> program
+  </p>
+
+  <div id="kampanye-list"></div>
+</div>
+
+<footer>&copy; 2026 DonasiKita — UKL SIJA 2026</footer>
+<script src="../assets/js/script.js"></script>
+<script>initKatalog();</script>
+</body>
+</html>

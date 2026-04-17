@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tambah Program — DonasiKita</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<nav>
+  <a href="../index.html" class="nav-logo">DONASIKITA</a>
+  <ul class="nav-links">
+    <li><a href="../index.html">BERANDA</a></li>
+    <li><a href="dashboard.html">DASHBOARD</a></li>
+    <ul id="nav-right" style="display:contents"></ul>
+  </ul>
+</nav>
+
+<div class="container">
+  <div class="breadcrumb"><a href="../index.html">Beranda</a> / <a href="dashboard.html">Dashboard</a> / Tambah Program</div>
+  <h1>TAMBAH PROGRAM DONASI</h1>
+  <div class="alert alert-err" id="alert-err"></div>
+
+  <form id="form-tambah" class="form-wrap" style="max-width:560px">
+    <label>Judul Program *</label>
+    <input type="text" name="judul" required placeholder="Contoh: Bantu Biaya Sekolah Anak Yatim">
+
+    <label>Kategori *</label>
+    <select name="kategori" required>
+      <option value="">— Pilih Kategori —</option>
+      <option>Pendidikan</option>
+      <option>Kesehatan</option>
+      <option>Bencana Alam</option>
+      <option>Yatim Piatu</option>
+      <option>Masjid &amp; TPQ</option>
+    </select>
+
+    <label>Target Dana (Rp) * — minimal Rp 10.000</label>
+    <input type="number" name="target_dana" required min="10000" placeholder="Contoh: 5000000">
+
+    <label>Deskripsi Program *</label>
+    <textarea name="deskripsi" rows="5" required placeholder="Ceritakan latar belakang dan tujuan program..."></textarea>
+
+    <label>Tanggal Mulai *</label>
+    <input type="date" name="tanggal_mulai" id="inp-mulai" required>
+
+    <label>Tanggal Selesai *</label>
+    <input type="date" name="tanggal_selesai" id="inp-selesai" required>
+
+    <div style="display:flex;gap:10px;margin-top:16px">
+      <button type="submit">Simpan Program</button>
+      <a href="dashboard.html" class="btn btn-outline">Batal</a>
+    </div>
+  </form>
+</div>
+
+<footer>&copy; 2026 DonasiKita — UKL SIJA 2026</footer>
+<script src="../assets/js/script.js"></script>
+<script>initTambah();</script>
+</body>
+</html>

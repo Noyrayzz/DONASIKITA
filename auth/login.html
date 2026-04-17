@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Login — DonasiKita</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<nav>
+  <a href="../index.html" class="nav-logo">DONASIKITA</a>
+  <ul class="nav-links">
+    <li><a href="../index.html">BERANDA</a></li>
+    <li><a href="../views/katalog.html">DONASI</a></li>
+    <ul id="nav-right" style="display:contents"></ul>
+  </ul>
+</nav>
+
+<div class="container">
+  <h1>LOGIN</h1>
+  <div class="alert alert-err" id="alert-err"></div>
+
+  <form id="form-login" class="form-wrap">
+    <label>Email</label>
+    <input type="email" name="email" required placeholder="email@example.com">
+    <label>Password</label>
+    <input type="password" name="password" required placeholder="••••••••">
+    <button type="submit">Masuk</button>
+  </form>
+
+  <p style="font-size:.85rem;margin-top:16px;color:#555">
+    Belum punya akun? <a href="register.html" style="color:#cc0000">Daftar di sini</a>
+  </p>
+
+  <hr>
+  <p style="font-size:.8rem;color:#888">
+    <strong>Akun Demo:</strong><br>
+    Admin: admin@donasi.id / password
+  </p>
+</div>
+
+<footer>&copy; 2026 DonasiKita — UKL SIJA 2026</footer>
+<script src="../assets/js/script.js"></script>
+<script>initLogin();</script>
+</body>
+</html>
